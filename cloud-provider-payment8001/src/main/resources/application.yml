@@ -12,7 +12,6 @@ spring:
       username: root
       password: Xkai112305
 
-
 eureka:
   client:
     register-with-eureka: true #表示向注册中心注册自己 默认为true
@@ -20,6 +19,9 @@ eureka:
     service-url:
       #defaultZone: http://localhost:7001/eureka/ # 入驻地址
       defaultZone: http://eureka7002.com:7002/eureka,http://eureka7001.com:7001/eureka
+  instance:
+    instance-id: payment8001
+    prefer-ip-address: true
 
 mybatis:
   mapperLocations: classpath:mapper/*.xml
