@@ -8,8 +8,14 @@ eureka:
       defaultZone: http://eureka7002.com:7002/eureka,http://eureka7001.com:7001/eureka
 feign:
   httpclient:
+    #指的是建立连接所用的时间，适用于网络状况正常的情况下,两端连接所用的时间
     connection-timeout: 5000
   client:
     config:
       default:
+        ##指的是建立连接后从服务器读取到可用资源所用的时间
         read-timeout: 5000
+logging:
+  level:
+    #feign日志以什么级别监控哪个接口
+    com.singed.springcloud.service.PaymentFeignService: debug
