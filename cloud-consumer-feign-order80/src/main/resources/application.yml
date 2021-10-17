@@ -6,3 +6,10 @@ eureka:
     service-url:
       #defaultZone: http://localhost:7001/eureka/ # 入驻地址
       defaultZone: http://eureka7002.com:7002/eureka,http://eureka7001.com:7001/eureka
+feign:
+  httpclient:
+    connection-timeout: 5000
+  client:
+    config:
+      default:
+        read-timeout: 5000
