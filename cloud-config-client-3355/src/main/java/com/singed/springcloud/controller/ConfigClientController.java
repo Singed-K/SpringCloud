@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RefreshScope
 public class ConfigClientController {
+    /**
+     * 调用以下url刷新config
+     * curl -X POST "http://localhost:3355/actuator/refresh"
+     */
     @Value("${config.info}")
     private String configInfo;
 
