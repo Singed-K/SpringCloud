@@ -12,8 +12,9 @@ spring:
           ####搜索目录
           search-paths:
             - springcloud-config
-      ####读取分支
-      label: main
+          ####读取分支
+          default-label: main
+          #http://config-3344.com:3344/config/dev.yml
 
 #服务注册到eureka地址
 eureka:
