@@ -12,7 +12,7 @@ spring:
       uri: http://config-3344.com:3344
   #rabbitmq相关配置
   rabbitmq:
-    host: http://192.168.1.6
+    host: 192.168.1.6
     port: 5672
     username: guest
     password: guest
